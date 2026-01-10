@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - AamarDukan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header (same as index.html) -->
+    <header class="header">
+        <div class="container">
+            <!-- Same header content as index.html -->
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>AamarDukan</span>
+                    </a>
+                </div>
+
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search products..." id="search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+
+                    <div class="cart-icon">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+
+                    <div class="user-account">
+                        <a href="#"><i class="fas fa-user"></i></a>
+                    </div>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Page Content -->
+    <main class="container cart-container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> > <span>Shopping Cart</span>
+        </div>
+
+        <h1 class="page-title">Your Shopping Cart</h1>
+
+        <div class="cart-content">
+            <!-- Cart Items -->
+            <div class="cart-items-section">
+                <div class="cart-header">
+                    <h2>Items (<span id="cart-items-count">0</span>)</h2>
+                    <button class="btn-text" id="clear-cart">Clear Cart</button>
+                </div>
+
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be dynamically loaded here -->
+                    <div class="empty-cart-message" id="empty-cart-message">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>Your cart is empty</h3>
+                        <p>Looks like you haven't added any items to your cart yet.</p>
+                        <a href="index.html" class="btn btn-primary">Continue Shopping</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+
+                <!-- Order Summary Section में -->
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal">₹0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span id="shipping">₹99</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax (18%)</span>
+                        <span id="tax">₹0.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="total">₹99.00</span>
+                    </div>
+                </div>
+
+                <div class="coupon-section">
+                    <input type="text" id="coupon-code" placeholder="Enter coupon code">
+                    <button class="btn-text" id="apply-coupon">Apply</button>
+                </div>
+
+                <div class="checkout-actions">
+                    <a href="checkout.html" class="btn btn-primary btn-checkout" id="checkout-btn">
+                        Proceed to Checkout
+                    </a>
+                    <a href="index.html" class="btn btn-secondary">
+                        Continue Shopping
+                    </a>
+                </div>
+
+                <div class="payment-methods">
+                    <p>Secure payment with:</p>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recently Viewed -->
+        <section class="recently-viewed">
+            <h2 class="section-title">Recently Viewed</h2>
+            <div class="products-grid" id="recently-viewed">
+                <!-- Recently viewed products will be dynamically loaded -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <!-- Same footer content as index.html -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AamarDukan</h3>
+                    <p>Your one-stop online shopping destination for quality products at affordable prices.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#deals">Today's Deals</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Stay Connected</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button class="btn-subscribe">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 AamarDukan. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of
+                        Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/product-data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        // Cart page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function () {
+            // Load cart items
+            loadCartItems();
+
+            // Update cart summary
+            updateCartSummary();
+
+            // Clear cart button
+            document.getElementById('clear-cart').addEventListener('click', function () {
+                if (confirm('Are you sure you want to clear your cart?')) {
+                    clearCart();
+                    loadCartItems();
+                    updateCartSummary();
+                }
+            });
+
+            // Apply coupon button
+            document.getElementById('apply-coupon').addEventListener('click', function () {
+                const couponCode = document.getElementById('coupon-code').value;
+                if (couponCode === 'SAVE10') {
+                    alert('Coupon applied! You got 10% off.');
+                    // In a real application, this would update the cart total
+                } else if (couponCode) {
+                    alert('Invalid coupon code. Please try again.');
+                } else {
+                    alert('Please enter a coupon code.');
+                }
+            });
+
+            // Checkout button
+            const checkoutBtn = document.getElementById('checkout-btn');
+            checkoutBtn.addEventListener('click', function (e) {
+                const cart = getCart();
+                if (cart.length === 0) {
+                    e.preventDefault();
+                    alert('Your cart is empty. Please add items before checkout.');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AamarDukan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>AamarDukan</span>
+                    </a>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search products..." id="search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="cart-icon">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                    
+                    <div class="user-account">
+                        <a href="#"><i class="fas fa-user"></i></a>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Page Content -->
+    <main class="container contact-container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> > <span>Contact Us</span>
+        </div>
+        
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="page-subtitle">We're here to help! Contact us with any questions or concerns.</p>
+        </section>
+        
+        <div class="contact-content">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Our Office</h3>
+                    <p>AamarDukan Pvt. Ltd.</p>
+                    <p>Attabira,Bargarh</p>
+                    <p>Odisha , 768027</p>
+                    <p>India</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone Numbers</h3>
+                    <p>Customer Support: <strong>1800-123-4567</strong></p>
+                    <p>Business Inquiries: <strong>011-23456789</strong></p>
+                    <p>Mon-Sat: 9:00 AM - 8:00 PM</p>
+                    <p>Sunday: 10:00 AM - 6:00 PM</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Address</h3>
+                    <p>Customer Support: <strong>support@aamardukan.in</strong></p>
+                    <p>Business: <strong>business@aamardukan.in</strong></p>
+                    <p>Careers: <strong>careers@aamardukan.in</strong></p>
+                    <p>Response Time: Within 24 hours</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Live Chat Support</h3>
+                    <p>Available 24/7 on our website and mobile app</p>
+                    <p>Click the chat icon in the bottom right corner</p>
+                    <p>Average response time: < 5 minutes</p>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h2 class="section-title">Send us a Message</h2>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Full Name *</label>
+                        <input type="text" id="contact-name" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-email">Email Address *</label>
+                            <input type="email" id="contact-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone">Phone Number *</label>
+                            <input type="tel" id="contact-phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-subject">Subject *</label>
+                        <select id="contact-subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="order">Order Issue</option>
+                            <option value="return">Return & Refund</option>
+                            <option value="product">Product Inquiry</option>
+                            <option value="account">Account Help</option>
+                            <option value="business">Business Partnership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-message">Message *</label>
+                        <textarea id="contact-message" rows="6" required placeholder="Please describe your issue or inquiry in detail..."></textarea>
+                    </div>
+                    
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="contact-newsletter">
+                        <label for="contact-newsletter">Subscribe to our newsletter for updates and offers</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I track my order?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Once your order is shipped, you'll receive a tracking number via SMS and email. You can track your order by logging into your account or using the tracking link provided.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your return policy?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day return policy for most products. Items must be in original condition with all tags and packaging intact. Some products like innerwear, perishables, and personalized items are not returnable.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you deliver to my location?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We deliver to over 20,000 pin codes across India. During checkout, enter your pin code to check delivery availability. Remote areas may have longer delivery times.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept all major payment methods including credit/debit cards, net banking, UPI, wallets (Paytm, PhonePe, etc.), and cash on delivery (subject to order value and location).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Store Locations -->
+        <section class="locations-section">
+            <h2 class="section-title">Our Store Locations</h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <h3>Attabira</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Bargarh, Odisha</p>
+                    <p><i class="fas fa-phone"></i> 011-23456789</p>
+                    <p><i class="fas fa-clock"></i> 10:00 AM - 9:00 PM</p>
+                </div>
+<!--                 
+                <div class="location-card">
+                    <h3>Mumbai</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Bandra West, Mumbai</p>
+                    <p><i class="fas fa-phone"></i> 022-76543210</p>
+                    <p><i class="fas fa-clock"></i> 10:00 AM - 9:00 PM</p>
+                </div>
+                
+                <div class="location-card">
+                    <h3>Bangalore</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Koramangala, Bangalore</p>
+                    <p><i class="fas fa-phone"></i> 080-98765432</p>
+                    <p><i class="fas fa-clock"></i> 10:00 AM - 9:00 PM</p>
+                </div>
+                
+                <div class="location-card">
+                    <h3>Hyderabad</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Banjara Hills, Hyderabad</p>
+                    <p><i class="fas fa-phone"></i> 040-87654321</p>
+                    <p><i class="fas fa-clock"></i> 10:00 AM - 9:00 PM</p>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <!-- Same footer content as index.html -->
+         <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AamarDukan</h3>
+                    <p>Your one-stop online shopping destination for quality products at affordable prices.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#deals">Today's Deals</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Stay Connected</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button class="btn-subscribe">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 AamarDukan. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of
+                        Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script>
+        // Contact page specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ Accordion
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle answer visibility
+                    answer.classList.toggle('active');
+                    
+                    // Rotate icon
+                    if (answer.classList.contains('active')) {
+                        icon.style.transform = 'rotate(180deg)';
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    } else {
+                        icon.style.transform = 'rotate(0deg)';
+                        answer.style.maxHeight = '0';
+                    }
+                    
+                    // Close other FAQ items
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== this) {
+                            const otherAnswer = otherQuestion.nextElementSibling;
+                            const otherIcon = otherQuestion.querySelector('i');
+                            otherAnswer.classList.remove('active');
+                            otherIcon.style.transform = 'rotate(0deg)';
+                            otherAnswer.style.maxHeight = '0';
+                        }
+                    });
+                });
+            });
+            
+            // Contact form submission
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form values
+                    const name = document.getElementById('contact-name').value;
+                    const email = document.getElementById('contact-email').value;
+                    
+                    // Basic validation
+                    if (!name || !email) {
+                        alert('Please fill in all required fields.');
+                        return;
+                    }
+                    
+                    // In a real application, this would send the form data to a server
+                    // For this demo, we'll just show a success message
+                    alert('Thank you for your message! We will get back to you within 24 hours.');
+                    
+                    // Reset form
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

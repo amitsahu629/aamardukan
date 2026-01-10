@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals & Offers - AamarDukan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>AamarDukan</span>
+                    </a>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="deals.html" class="active">Deals</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search deals..." id="search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="cart-icon">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                    
+                    <div class="user-account">
+                        <a href="#"><i class="fas fa-user"></i></a>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Deals Page Content -->
+    <main class="container deals-container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> > <span>Deals & Offers</span>
+        </div>
+        
+        <!-- Hero Banner -->
+        <section class="deals-hero">
+            <div class="hero-content">
+                <h1 class="page-title">🔥 Exclusive Deals & Offers</h1>
+                <p class="page-subtitle">Limited time offers! Don't miss out on these amazing discounts</p>
+                <div class="timer-container">
+                    <div class="timer-title">Flash Sale Ends In:</div>
+                    <div class="timer" id="flash-sale-timer">
+                        <div class="time-unit">
+                            <span class="time-value" id="hours">12</span>
+                            <span class="time-label">Hours</span>
+                        </div>
+                        <div class="time-separator">:</div>
+                        <div class="time-unit">
+                            <span class="time-value" id="minutes">45</span>
+                            <span class="time-label">Minutes</span>
+                        </div>
+                        <div class="time-separator">:</div>
+                        <div class="time-unit">
+                            <span class="time-value" id="seconds">30</span>
+                            <span class="time-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Deal Categories -->
+        <section class="deal-categories">
+            <h2 class="section-title">Browse Deals by Category</h2>
+            <div class="categories-tabs">
+                <button class="tab-btn active" data-category="all">All Deals</button>
+                <button class="tab-btn" data-category="flash">Flash Sale</button>
+                <button class="tab-btn" data-category="clearance">Clearance Sale</button>
+                <button class="tab-btn" data-category="bundle">Bundle Deals</button>
+                <button class="tab-btn" data-category="festive">Festive Offers</button>
+                <button class="tab-btn" data-category="bank">Bank Offers</button>
+            </div>
+        </section>
+        
+        <!-- Featured Deals -->
+        <section class="featured-deals">
+            <h2 class="section-title">Today's Featured Deals</h2>
+            <div class="deals-grid" id="featured-deals">
+                <!-- Featured deals will be dynamically loaded -->
+            </div>
+        </section>
+        
+        <!-- Flash Sale Section -->
+        <section class="flash-sale-section">
+            <div class="section-header">
+                <h2 class="section-title">⚡ Flash Sale</h2>
+                <div class="sale-timer">
+                    <span>Ends in: </span>
+                    <div class="small-timer" id="small-timer">
+                        <span id="small-hours">12</span>:<span id="small-minutes">45</span>:<span id="small-seconds">30</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flash-products">
+                <div class="flash-product-card">
+                    <div class="flash-badge">70% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Camera">
+                    </div>
+                    <div class="product-info">
+                        <h3>DSLR Camera</h3>
+                        <div class="price">
+                            <span class="current-price">₹24,999</span>
+                            <span class="original-price">₹49,999</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                            <span class="progress-text">85% sold</span>
+                        </div>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+                
+                <div class="flash-product-card">
+                    <div class="flash-badge">60% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Smart Watch">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Watch Pro</h3>
+                        <div class="price">
+                            <span class="current-price">₹6,799</span>
+                            <span class="original-price">₹16,999</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 72%;"></div>
+                            <span class="progress-text">72% sold</span>
+                        </div>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+                
+                <div class="flash-product-card">
+                    <div class="flash-badge">55% OFF</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Shoes">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sports Shoes</h3>
+                        <div class="price">
+                            <span class="current-price">₹1,799</span>
+                            <span class="original-price">₹3,999</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                            <span class="progress-text">90% sold</span>
+                        </div>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Bank & Card Offers -->
+        <section class="bank-offers">
+            <h2 class="section-title">🏦 Bank & Card Offers</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="bank-logo">
+                        <i class="fab fa-cc-visa"></i>
+                        <span>VISA</span>
+                    </div>
+                    <h3>10% Instant Discount</h3>
+                    <p>Get 10% instant discount on orders above ₹5,000</p>
+                    <span class="offer-code">Use Code: VISA10</span>
+                    <button class="btn btn-secondary">View Details</button>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="bank-logo">
+                        <i class="fas fa-university"></i>
+                        <span>HDFC</span>
+                    </div>
+                    <h3>₹1,500 Cashback</h3>
+                    <p>Get ₹1,500 cashback on EMI transactions</p>
+                    <span class="offer-code">Use Code: HDFC1500</span>
+                    <button class="btn btn-secondary">View Details</button>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="bank-logo">
+                        <i class="fas fa-credit-card"></i>
+                        <span>ICICI</span>
+                    </div>
+                    <h3>No Cost EMI</h3>
+                    <p>No Cost EMI on 3 & 6 months tenure</p>
+                    <span class="offer-code">Use Code: ICICINCE</span>
+                    <button class="btn btn-secondary">View Details</button>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="bank-logo">
+                        <i class="fab fa-cc-paypal"></i>
+                        <span>PayPal</span>
+                    </div>
+                    <h3>₹500 Cashback</h3>
+                    <p>Get ₹500 cashback on first transaction</p>
+                    <span class="offer-code">Use Code: PAYPAL500</span>
+                    <button class="btn btn-secondary">View Details</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Daily Deals -->
+        <section class="daily-deals">
+            <h2 class="section-title">📅 Daily Deals</h2>
+            <div class="days-tabs">
+                <button class="day-tab active" data-day="today">Today</button>
+                <button class="day-tab" data-day="tomorrow">Tomorrow</button>
+                <button class="day-tab" data-day="week">This Week</button>
+                <button class="day-tab" data-day="weekend">Weekend Special</button>
+            </div>
+            
+            <div class="daily-deals-content">
+                <div class="deal-of-the-day">
+                    <div class="deal-banner">
+                        <div class="deal-info">
+                            <h3>Deal of the Day</h3>
+                            <h2>Wireless Earbuds</h2>
+                            <p>Noise cancellation with 20hr battery</p>
+                            <div class="price">
+                                <span class="current-price">₹2,499</span>
+                                <span class="original-price">₹4,999</span>
+                            </div>
+                            <button class="btn btn-primary">Grab Deal</button>
+                        </div>
+                        <div class="deal-image">
+                            <img src="https://images.unsplash.com/photo-1590658165737-15a047b8b5e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Wireless Earbuds">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="other-daily-deals">
+                    <div class="small-deal-card">
+                        <div class="deal-tag">50% OFF</div>
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Headphones">
+                        <h4>Bluetooth Headphones</h4>
+                        <div class="price">
+                            <span class="current-price">₹1,999</span>
+                            <span class="original-price">₹3,999</span>
+                        </div>
+                    </div>
+                    
+                    <div class="small-deal-card">
+                        <div class="deal-tag">40% OFF</div>
+                        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Camera">
+                        <h4>Digital Camera</h4>
+                        <div class="price">
+                            <span class="current-price">₹8,999</span>
+                            <span class="original-price">₹14,999</span>
+                        </div>
+                    </div>
+                    
+                    <div class="small-deal-card">
+                        <div class="deal-tag">35% OFF</div>
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Smart Watch">
+                        <h4>Smart Watch</h4>
+                        <div class="price">
+                            <span class="current-price">₹3,499</span>
+                            <span class="original-price">₹5,399</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Special Offers -->
+        <section class="special-offers">
+            <h2 class="section-title">🎁 Special Offers</h2>
+            <div class="special-offers-grid">
+                <div class="special-offer-card">
+                    <div class="offer-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Buy 1 Get 1 Free</h3>
+                    <p>On selected apparel and accessories</p>
+                    <span class="validity">Valid till: 30th Nov 2023</span>
+                </div>
+                
+                <div class="special-offer-card">
+                    <div class="offer-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Free Shipping</h3>
+                    <p>On all orders above ₹999</p>
+                    <span class="validity">No end date</span>
+                </div>
+                
+                <div class="special-offer-card">
+                    <div class="offer-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Extra 10% Off</h3>
+                    <p>On prepaid orders with code: EXTRA10</p>
+                    <span class="validity">Valid till: 15th Dec 2023</span>
+                </div>
+                
+                <div class="special-offer-card">
+                    <div class="offer-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Refer & Earn</h3>
+                    <p>Earn ₹500 for every friend who signs up</p>
+                    <span class="validity">Ongoing offer</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter Subscription -->
+        <section class="deal-newsletter">
+            <div class="newsletter-content">
+                <h2>Never Miss a Deal!</h2>
+                <p>Subscribe to our newsletter and get notified about exclusive offers and flash sales</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button class="btn btn-primary">Subscribe</button>
+                </div>
+                <p class="small-text">By subscribing, you agree to our Privacy Policy</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Same footer content as index.html -->
+         <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AamarDukan</h3>
+                    <p>Your one-stop online shopping destination for quality products at affordable prices.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#deals">Today's Deals</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Stay Connected</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button class="btn-subscribe">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 AamarDukan. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of
+                        Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/product-data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/deals.js"></script>
+</body>
+</html>
