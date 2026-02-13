@@ -1,4 +1,4 @@
-# ShopEasy E-Commerce Website
+# Aamardukan E-Commerce Website
 
 A responsive, user-friendly e-commerce website frontend for a small online shop. This project includes all the essential pages and functionality needed for a modern online shopping experience.
 
