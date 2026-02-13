@@ -2,6 +2,11 @@
 
 A responsive, user-friendly e-commerce website frontend for a small online shop. This project includes all the essential pages and functionality needed for a modern online shopping experience.
 
+## 🚀 Live Demo
+
+🔗 [Live Demo – Click Here](https://amitsahu629.github.io/aamardukan/)
+
+
 ## Features
 
 ### 1. Product Listing Page
